@@ -25,7 +25,7 @@ RUN echo PATH
 RUN npm install ibm_db
 RUN go run connect.go > go-result.txt
 RUN node connect.js > node-result.txt
-RUN python3 connect.py > python-result.txt
+#RUN python3 connect.py > python-result.txt
 #RUN python3 emailtest.py
 ENTRYPOINT [ "python" ]
 CMD [ "app.py" ]
